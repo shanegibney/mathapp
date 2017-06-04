@@ -12,6 +12,8 @@ export class SumComponent implements OnInit {
   sum: number;
 
   onSum(){
+    this.num1 = +this.num1;
+    this.num2 = +this.num2;
     this.sum = this.num1 + this.num2;
   }
   constructor() { }
