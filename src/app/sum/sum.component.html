@@ -1,0 +1,9 @@
+<p>
+  I am contents of the sum component!
+</p>
+<label for="n1">num1: </label><input name="n1" type="text" class="form-control" [(ngModel)]="num1">
+<label for="n2">num2: </label><input name="n2" type="text" class="form-control" [(ngModel)]="num2">
+<p>num1: {{ num1 }}</p>
+<p>num1: {{ num2 }}</p>
+<button class="btn btn-primary" (click)="onSum()">Sum numbers</button>
+<p>Sum: {{ sum }}</p>
