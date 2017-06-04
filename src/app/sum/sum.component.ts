@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SumComponent implements OnInit {
 
-  num1: number = 1;
-  num2: number = 2;
+  num1: number;
+  num2: number;
   sum: number;
 
   onSum(){
