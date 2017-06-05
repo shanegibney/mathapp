@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SumComponent implements OnInit {
 
-  num1: number;
-  num2: number;
+  num1: any;
+  num2: any;
   sum: number;
 
   onSum(){
-    this.num1 = +this.num1;
-    this.num2 = +this.num2;
-    this.sum = this.num1 + this.num2;
+    // this.num1 = +this.num1;//converts number to int to prevent concatenation
+    // this.num2 = +this.num2;
+    this.sum = parseInt(this.num1) + parseInt(this.num2);
   }
   constructor() { }
 
